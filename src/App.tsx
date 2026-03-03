@@ -14,44 +14,52 @@ const Wrapper = styled.div`
     height: 100vh;
     margin: auto;
     padding: 1vh 0;
-    @media screen and (max-width: 1400px) { #wrapper { width: 80vw } }
+    @media screen and (max-width: 1400px) { width: 80vw }
+`;
+
+const Fbox = styled.div`
+    display: flex;
+    height: calc(78% - 4 * 0.5vh);
+    width: 100%;
 `;
 
 function Root() {
     return (
         <Wrapper>
             <Header/>
-            <Nav/>
-            <Routes>
-                <Route
-                    path={"/"}
-                    element={<Home/>}
-                />
-                <Route
-                    path={"/education"}
-                    element={<Education/>}
-                />
-                <Route
-                    path={"/projects"}
-                    // element={<Projects/>}
-                />
-                <Route
-                    path={"/games"}
-                    // element={<Games/>}
-                />
-                <Route
-                    path={"/employment"}
-                    // element={<Employment/>}
-                />
-                <Route
-                    path={"/involvement"}
-                    // element={<Involvement/>}
-                />
-                <Route
-                    path={"/skills"}
-                    // element={<Skills/>}
-                />
-            </Routes>
+            <Fbox>
+                <Nav/>
+                <Routes>
+                    <Route
+                        path={"/"}
+                        element={<Home/>}
+                    />
+                    <Route
+                        path={"/education"}
+                        element={<Education/>}
+                    />
+                    <Route
+                        path={"/projects"}
+                        // element={<Projects/>}
+                    />
+                    <Route
+                        path={"/games"}
+                        // element={<Games/>}
+                    />
+                    <Route
+                        path={"/employment"}
+                        // element={<Employment/>}
+                    />
+                    <Route
+                        path={"/involvement"}
+                        // element={<Involvement/>}
+                    />
+                    <Route
+                        path={"/skills"}
+                        // element={<Skills/>}
+                    />
+                </Routes>
+            </Fbox>
             <Footer/>
         </Wrapper>
     );
