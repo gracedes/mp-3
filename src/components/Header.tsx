@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-import {Window, WinDeco, Content} from "./styling/WindowStyles.tsx";
+import {Window, Deco, Content} from "./styling/WindowStyles.tsx";
 
 export default function Header() {
     const Header = styled.header`
@@ -16,7 +16,7 @@ export default function Header() {
     return (
         <Header>
             <Window>
-                <WinDeco><img src="../../public/window.png" alt="decorative minimize, expand, and close icons"/></WinDeco>
+                <Deco/>
                 <Content>
                     <h1>Grace Desrochers</h1>
                     <p>Welcome to my online resume!</p>

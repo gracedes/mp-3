@@ -8,7 +8,7 @@ export const Window = styled.div`
     border-radius: 4px;
 `;
 
-export const WinDeco = styled.div`
+const WinDeco = styled.div`
     height: 22px;
     width: 100%;
     background-color: #d2d2d2;
@@ -23,3 +23,11 @@ export const WinDeco = styled.div`
 `;
 
 export const Content = styled.div`padding: 0 0.7vw`;
+
+export function Deco() {
+    return (
+        <WinDeco>
+            <img src="../../public/window.png" alt="decorative minimize, expand, and close icons"/>
+        </WinDeco>
+    );
+}
