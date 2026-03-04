@@ -5,7 +5,7 @@ import {Window, Deco} from "./styling/WindowStyles.tsx";
 
 export default function Nav() {
     const Nav = styled.nav`
-        width: 30%;
+        width: 100%;
         text-align: center;
         margin-right: 0.5vw;
         & ul {
@@ -27,9 +27,9 @@ export default function Nav() {
     `;
 
     return (
-        <Nav>
-            <Window>
-                <Deco/>
+        <Window>
+            <Deco/>
+            <Nav>
                 <ul>
                     <li><NavLink to="/">Home</NavLink></li>
                     <li><NavLink to="/education">Education</NavLink></li>
@@ -39,7 +39,7 @@ export default function Nav() {
                     <li><NavLink to="/involvement">Involvement</NavLink></li>
                     <li><NavLink to="/skills">Skills</NavLink></li>
                 </ul>
-            </Window>
-        </Nav>
+            </Nav>
+        </Window>
     );
 }

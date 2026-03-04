@@ -15,24 +15,38 @@ const Wrapper = styled.div`
     margin: auto;
     padding: 1vh 0;
     @media screen and (max-width: 1400px) { width: 80vw }
+    background: lightcoral;
 `;
 
 const Fbox = styled.div`
     display: flex;
     height: calc(78% - 4 * 0.5vh);
     width: 100%;
+    background: #fff;
+`;
+
+const StyledHeader = styled(Header)`
+    width: calc(100% - 2 * 0.5vw);
+    height: 15vh;
+`;
+const StyledNav = styled(Nav)`
+    width: 30%;
+`;
+const StyledMain = styled(Routes)`
+    width: 70%;
 `;
 
 function Root() {
     return (
         <Wrapper>
-            <Header/>
+            <StyledHeader/>
             <Fbox>
-                <Nav/>
-                <Routes>
+                <StyledNav/>
+                <StyledMain>
                     <Route
                         path={"/"}
                         element={<Home/>}
+                        // TODO: find better way to avoid having to put window and deco in each route
                     />
                     <Route
                         path={"/education"}
@@ -58,7 +72,7 @@ function Root() {
                         path={"/skills"}
                         // element={<Skills/>}
                     />
-                </Routes>
+                </StyledMain>
             </Fbox>
             <Footer/>
         </Wrapper>
