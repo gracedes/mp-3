@@ -8,18 +8,21 @@ import Home from "./components/mains/Home.tsx";
 import Education from "./components/mains/Education.tsx";
 
 const Wrapper = styled.div`
-    font-family: Helvetica, Arial, Veranda, sans-serif;
-    font-optical-sizing: auto;
     width: 60vw;
     height: 100vh;
     margin: auto;
-    @media screen and (max-width: 1400px) { width: 80vw }
+    @media screen and (max-width: 1400px) { width: 80vw };
+    @media screen and (max-width: 750px) { width: 95vw };
 `;
 
 const Fbox = styled.div`
     display: flex;
     height: 78vh;
     width: 100%;
+    @media screen and (max-width: 750px) {
+        flex-direction: column;
+        height: 83vh;
+    };
 `;
 
 function Root() {

@@ -13,6 +13,13 @@ export default function Footer() {
             font-size: calc(2px + 1.75vh);
         };
         border: solid 1px cyan;
+        @media screen and (max-width: 750px) {
+            height: 7vh;
+            & p {
+                margin-top: 0.3vh;
+                font-size: calc(2px + min(1.3vh, 3vw));
+            }
+        };
     `;
 
     return (

@@ -11,9 +11,10 @@ const HomeLink = styled(Link)`
 
 const HomeImage = styled.img`
     display: block;
-    max-width: calc(30vw + 50px);
+    max-width: 65%;
     border-radius: 10px;
     margin: 1vh auto 2vh;
+    @media (max-width: 750px) {  max-width: 80%;  };
 `;
 
 export default function Home() {

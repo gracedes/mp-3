@@ -10,6 +10,12 @@ export default function Header() {
             font-size: calc(2px + max(2.5vh, 1.5vw));
             font-style: italic;
         };
+        @media screen and (max-width: 750px) {
+            height: 10vh;
+            text-align: center;
+            & h1 { font-size: calc(2px + 3vh) };
+            & p { font-size: calc(2px + 1.8vh) };
+        }
         border: solid 1px cyan;
     `;
 

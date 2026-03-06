@@ -15,6 +15,21 @@ export default function Nav() {
             width: 100%;
             &:hover { background-color:#d9d9d9 };
         };
+        @media screen and (max-width: 750px) {
+            width: 100%;
+            height: 10vh;
+            & ul {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: calc(9vh - 27px);
+            }
+            & li {
+                float: left;
+                width: fit-content;
+                height: 100%;
+            }
+        }
         // TODO: go to office hours about current page color changing
         border: solid 1px cyan;
         padding: 0;
@@ -25,6 +40,12 @@ export default function Nav() {
         padding: 1vh 0;
         color: black;
         text-decoration: none;
+        @media screen and (max-width: 750px) {
+            padding: 1.8vh 2vw;
+            height: 100%;
+            width: fit-content;
+            font-size: calc(2px + 2vw);
+        }
     `;
 
     return (

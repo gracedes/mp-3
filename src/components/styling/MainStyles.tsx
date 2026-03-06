@@ -10,4 +10,9 @@ export const Main = styled.main`
     }
     & p { padding: 0 1.5vw; }
     border: solid 1px cyan;
+    @media screen and (max-width: 750px) {
+        width: 100%;
+        height: 73vh;
+        font-size: calc(2px + max(1.8vh, 1vw));
+    };
 `;
