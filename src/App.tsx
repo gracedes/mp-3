@@ -13,36 +13,22 @@ const Wrapper = styled.div`
     width: 60vw;
     height: 100vh;
     margin: auto;
-    padding: 1vh 0;
     @media screen and (max-width: 1400px) { width: 80vw }
-    background: lightcoral;
 `;
 
 const Fbox = styled.div`
     display: flex;
-    height: calc(78% - 4 * 0.5vh);
+    height: 78vh;
     width: 100%;
-    background: #fff;
-`;
-
-const StyledHeader = styled(Header)`
-    width: calc(100% - 2 * 0.5vw);
-    height: 15vh;
-`;
-const StyledNav = styled(Nav)`
-    width: 30%;
-`;
-const StyledMain = styled(Routes)`
-    width: 70%;
 `;
 
 function Root() {
     return (
         <Wrapper>
-            <StyledHeader/>
+            <Header/>
             <Fbox>
-                <StyledNav/>
-                <StyledMain>
+                <Nav/>
+                <Routes>
                     <Route
                         path={"/"}
                         element={<Home/>}
@@ -72,7 +58,7 @@ function Root() {
                         path={"/skills"}
                         // element={<Skills/>}
                     />
-                </StyledMain>
+                </Routes>
             </Fbox>
             <Footer/>
         </Wrapper>

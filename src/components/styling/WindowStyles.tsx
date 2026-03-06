@@ -1,11 +1,13 @@
 import styled from "styled-components";
 
 export const Window = styled.div`
+    height: calc(100% - 1vh);
     background-color: white;
-    margin: 0.5vh 0.5vw;
     padding: 0;
     border: 2px solid #999999;
     border-radius: 4px;
+
+    margin: 0.5vh 0.5vw;
 `;
 
 const WinDeco = styled.div`

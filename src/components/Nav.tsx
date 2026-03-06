@@ -5,9 +5,8 @@ import {Window, Deco} from "./styling/WindowStyles.tsx";
 
 export default function Nav() {
     const Nav = styled.nav`
-        width: 100%;
+        width: 30vw;
         text-align: center;
-        margin-right: 0.5vw;
         & ul {
             list-style-type: none;
             padding: 0;
@@ -17,6 +16,8 @@ export default function Nav() {
             &:hover { background-color:#d9d9d9 };
         };
         // TODO: go to office hours about current page color changing
+        border: solid 1px cyan;
+        padding: 0;
     `;
 
     const NavLink = styled(Link)`
@@ -27,19 +28,21 @@ export default function Nav() {
     `;
 
     return (
-        <Window>
-            <Deco/>
-            <Nav>
-                <ul>
-                    <li><NavLink to="/">Home</NavLink></li>
-                    <li><NavLink to="/education">Education</NavLink></li>
-                    <li><NavLink to="/projects">Projects</NavLink></li>
-                    <li><NavLink to="/games">Games</NavLink></li>
-                    <li><NavLink to="/employment">Employment</NavLink></li>
-                    <li><NavLink to="/involvement">Involvement</NavLink></li>
-                    <li><NavLink to="/skills">Skills</NavLink></li>
-                </ul>
-            </Nav>
-        </Window>
+        <Nav>
+            <Window>
+                <Deco/>
+                <nav>
+                    <ul>
+                        <li><NavLink to="/">Home</NavLink></li>
+                        <li><NavLink to="/education">Education</NavLink></li>
+                        <li><NavLink to="/projects">Projects</NavLink></li>
+                        <li><NavLink to="/games">Games</NavLink></li>
+                        <li><NavLink to="/employment">Employment</NavLink></li>
+                        <li><NavLink to="/involvement">Involvement</NavLink></li>
+                        <li><NavLink to="/skills">Skills</NavLink></li>
+                    </ul>
+                </nav>
+            </Window>
+        </Nav>
     );
 }

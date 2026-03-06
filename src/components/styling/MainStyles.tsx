@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Main = styled.main`
-    width: 100%;
+    width: 70vw;
     font-size: calc(2px + max(1.8vh, 1vw));
     & h1 {
         font-size: calc(2px + max(2.25vh, 1.5vw));
@@ -9,4 +9,5 @@ export const Main = styled.main`
         margin-top: 15px;
     }
     & p { padding: 0 1.5vw; }
+    border: solid 1px cyan;
 `;
