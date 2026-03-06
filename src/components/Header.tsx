@@ -16,7 +16,7 @@ export default function Header() {
             & h1 { font-size: calc(2px + 3vh) };
             & p { font-size: calc(2px + 1.8vh) };
         }
-        border: solid 1px cyan;
+        padding: 0.5vh 0.5vw;
     `;
 
     return (

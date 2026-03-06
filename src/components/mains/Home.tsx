@@ -24,7 +24,7 @@ export default function Home() {
                 <Deco/>
                 <Content>
                     <h1><u>Home</u></h1>
-                    <HomeImage src="../../../public/grace.jpg" alt="Grace Desrochers sitting on a railing in front of a lake on a sunny day"/>
+                    <HomeImage src="/grace.jpg" alt="Grace Desrochers sitting on a railing in front of a lake on a sunny day"/>
                     <p>Grace Desrochers (she/her) is a third-year student majoring in Computer Science at Boston
                         University. She has a passion for making games and other interactive experiences as a way of
                         storytelling and creative expression.</p>

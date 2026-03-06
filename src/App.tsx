@@ -8,6 +8,8 @@ import Home from "./components/mains/Home.tsx";
 import Education from "./components/mains/Education.tsx";
 
 const Wrapper = styled.div`
+    font-family: Helvetica, Arial, Veranda, sans-serif;
+    font-optical-sizing: auto;
     width: 60vw;
     height: 100vh;
     margin: auto;

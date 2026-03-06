@@ -22,7 +22,7 @@ export default function Nav() {
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                height: calc(9vh - 27px);
+                height: calc(9vh - 25px);
             }
             & li {
                 float: left;
@@ -30,9 +30,7 @@ export default function Nav() {
                 height: 100%;
             }
         }
-        // TODO: go to office hours about current page color changing
-        border: solid 1px cyan;
-        padding: 0;
+        padding: 0.5vh 0.5vw;
     `;
 
     const NavLink = styled(Link)`
