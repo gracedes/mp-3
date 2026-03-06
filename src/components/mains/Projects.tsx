@@ -1,6 +1,8 @@
 import {Window, Deco, Content} from "../styling/WindowStyles.tsx";
 import {Main, MainLink, VBox, HBox, Tag} from "../styling/MainStyles.tsx";
 
+import Calculator from "../Calculator.tsx";
+
 export default function Projects() {
     return (
       <Main>
@@ -39,7 +41,9 @@ export default function Projects() {
                               <MainLink to={"https://devpost.com/software/solar-wise-energy-forecast"} target={"_blank"}>devpost</MainLink>
                           </div>
                       </HBox>
-                      {/* TODO: add calculator */}
+                      <h3>JS Calculator</h3>
+                      <br/>
+                      <Calculator/>
                   </VBox>
               </Content>
           </Window>
