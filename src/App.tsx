@@ -6,6 +6,11 @@ import Nav from "./components/Nav.tsx";
 import Footer from "./components/Footer.tsx";
 import Home from "./components/mains/Home.tsx";
 import Education from "./components/mains/Education.tsx";
+import Projects from "./components/mains/Projects.tsx";
+import Games from "./components/mains/Games.tsx";
+import Employment from "./components/mains/Employment.tsx";
+import Involvement from "./components/mains/Involvement.tsx";
+import Skills from "./components/mains/Skills.tsx";
 
 const Wrapper = styled.div`
     font-family: Helvetica, Arial, Veranda, sans-serif;
@@ -37,7 +42,6 @@ function Root() {
                     <Route
                         path={"/"}
                         element={<Home/>}
-                        // TODO: find better way to avoid having to put window and deco in each route
                     />
                     <Route
                         path={"/education"}
@@ -45,23 +49,23 @@ function Root() {
                     />
                     <Route
                         path={"/projects"}
-                        // element={<Projects/>}
+                        element={<Projects/>}
                     />
                     <Route
                         path={"/games"}
-                        // element={<Games/>}
+                        element={<Games/>}
                     />
                     <Route
                         path={"/employment"}
-                        // element={<Employment/>}
+                        element={<Employment/>}
                     />
                     <Route
                         path={"/involvement"}
-                        // element={<Involvement/>}
+                        element={<Involvement/>}
                     />
                     <Route
                         path={"/skills"}
-                        // element={<Skills/>}
+                        element={<Skills/>}
                     />
                 </Routes>
             </Fbox>

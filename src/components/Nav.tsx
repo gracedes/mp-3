@@ -5,7 +5,7 @@ import {Window, Deco} from "./styling/WindowStyles.tsx";
 
 export default function Nav() {
     const Nav = styled.nav`
-        width: 30vw;
+        width: 30%;
         text-align: center;
         & ul {
             list-style-type: none;
