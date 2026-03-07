@@ -3,6 +3,7 @@ import {HBox} from "./styling/MainStyles.tsx";
 import {useState} from "react";
 import styled from "styled-components";
 
+// styling for the output field of the calculator, which uses props in order to determine the background color ^u^
 export const Output = styled.div<{value: number}>`
     height: 4vh;
     width: 75%;
@@ -15,11 +16,12 @@ export const Output = styled.div<{value: number}>`
 `;
 
 export default function Calculator() {
-
+    // useState is used for the numbers as well as the output
     const [firstNumber, setFirstNumber] = useState(0);
     const [secondNumber, setSecondNumber] = useState(0)
     const [output, setOutput] = useState(0);
 
+    // basic operation functions just take the two numbers and send the result to the output useState
     function addition() {
         setOutput(firstNumber + secondNumber);
     }
@@ -33,6 +35,7 @@ export default function Calculator() {
         setOutput(firstNumber / secondNumber);
     }
     function power() {
+        // basic power for-loop w/ temp variable
         let res = firstNumber;
         for (let i = 0; i < secondNumber - 1; i++) {
             res *= firstNumber;
@@ -50,14 +53,17 @@ export default function Calculator() {
             <div>
                 <HBox>
                     <label htmlFor="firstNumber">First Number:</label>
+                    {/* when the first number is changed, send that event's value to setFirstNumber */}
                     <input type={"number"} id={"firstNumber"} value={firstNumber} onChange={(e)=>setFirstNumber(Number(e.target.value))}/>
                 </HBox>
                 <HBox>
                     <label htmlFor="secondNumber">Second Number:</label>
+                    {/* do the same as above for the second number */}
                     <input type={"number"} id={"secondNumber"} value={secondNumber} onChange={(e)=>setSecondNumber(Number(e.target.value))}/>
                 </HBox>
             </div>
             <Buttons>
+                {/* each button just calls it corresponding function on click, pretty simple */}
                 <HBox>
                     <button onClick={addition}>+</button>
                     <button onClick={subtraction}>&minus;</button>
@@ -68,6 +74,7 @@ export default function Calculator() {
                     <button onClick={power}>^</button>
                     <button onClick={division}>/</button>
                 </HBox>
+                {/* set the output */}
                 <Output value={output}>{output}</Output>
             </Buttons>
         </Calc>

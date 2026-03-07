@@ -4,8 +4,10 @@ import styled from "styled-components";
 import {Window, Deco} from "./styling/WindowStyles.tsx";
 
 export default function Nav() {
+    // the nav has much more interesting styling than the header and footer
     const Nav = styled.nav`
         width: 30%;
+        padding: 0.5vh 0.5vw;
         text-align: center;
         & ul {
             list-style-type: none;
@@ -15,6 +17,7 @@ export default function Nav() {
             width: 100%;
             &:hover { background-color:#d9d9d9 };
         };
+        // horizontal nav setup
         @media screen and (max-width: 750px) {
             width: 100%;
             height: 10vh;
@@ -29,10 +32,10 @@ export default function Nav() {
                 width: fit-content;
                 height: 100%;
             }
-        }
-        padding: 0.5vh 0.5vw;
+        };
     `;
 
+    // the styling specifically for the links in the nav, this is needed to make them the proper height and width
     const NavLink = styled(Link)`
         display: block;
         padding: 1vh 0;

@@ -2,6 +2,7 @@ import {Window, Deco, Content} from "../styling/WindowStyles.tsx";
 import {Main, VBox} from "../styling/MainStyles.tsx";
 
 export default function Employment() {
+    // not a super interesting page, again I don't really have that much to put here
     return (
       <Main>
           <Window>

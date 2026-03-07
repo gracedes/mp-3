@@ -1,10 +1,10 @@
 import styled from "styled-components";
 
 import {Window, Deco, Content} from "../styling/WindowStyles.tsx";
-import {Main, VBox, HBox} from "../styling/MainStyles.tsx";
+import {Main, VBox, HBox, HText} from "../styling/MainStyles.tsx";
 
 export default function Skills() {
-    const HText = styled.p` margin-right: 3vw `;
+    // this is just defined here because no other pages reference it
     const Center = styled.p` text-align: center `;
 
     return (

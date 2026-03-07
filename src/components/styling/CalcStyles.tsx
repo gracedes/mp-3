@@ -1,5 +1,6 @@
 import styled from "styled-components";
 
+// styling for the calculator and its buttons
 export const Calc = styled.div`
     display: flex;
     flex-direction: column;
@@ -25,7 +26,7 @@ export const Calc = styled.div`
         &:hover { background-color: #ecb8b8 };
     }
 `;
-
+// and scaling for the button div
 export const Buttons = styled.div`
     width: 50%;
     margin: auto;

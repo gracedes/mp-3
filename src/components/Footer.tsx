@@ -4,8 +4,10 @@ import styled from "styled-components";
 import {Window, Deco, Content} from "./styling/WindowStyles.tsx";
 
 export default function Footer() {
+    // here's the styling for the footer
     const Footer = styled.footer`
         height: 7vh;
+        padding: 0.5vh 0.5vw;
         font-size: calc(11px + 0.5vw);
         text-align: center;
         & p {
@@ -18,7 +20,6 @@ export default function Footer() {
                 font-size: calc(2px + min(1.3vh, 3vw));
             }
         };
-        padding: 0.5vh 0.5vw;
     `;
 
     return (

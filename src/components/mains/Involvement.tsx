@@ -1,5 +1,5 @@
 import {Window, Deco, Content} from "../styling/WindowStyles.tsx";
-import {Main, VBox} from "../styling/MainStyles.tsx";
+import {Main, VBox, HBox, HText} from "../styling/MainStyles.tsx";
 
 export default function Involvement() {
     return (
@@ -14,16 +14,16 @@ export default function Involvement() {
                             <h3>Game Development Club</h3>
                             <h4>Boston University</h4>
                             <br/>
-                            <div className="hbox">
-                                <div className="htext">
+                            <HBox>
+                                <HText>
                                     <h4>President</h4>
                                     <p><i>2024 - 2025</i></p>
-                                </div>
-                                <div>
+                                </HText>
+                                <HText>
                                     <h4>Member</h4>
                                     <p><i>2022 - present</i></p>
-                                </div>
-                            </div>
+                                </HText>
+                            </HBox>
                         </div>
                     </VBox>
                 </Content>

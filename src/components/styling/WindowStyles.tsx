@@ -1,5 +1,6 @@
 import styled from "styled-components";
 
+// this is the style for the window frame
 export const Window = styled.div`
     height: 100%;
     background-color: white;
@@ -8,6 +9,7 @@ export const Window = styled.div`
     border-radius: 4px;
 `;
 
+// this provides the style for the grey bar at the top of each window...
 const WinDeco = styled.div`
     height: 22px;
     width: 100%;
@@ -21,9 +23,7 @@ const WinDeco = styled.div`
         margin: 0;
     }
 `;
-
-export const Content = styled.div`padding: 0 0.7vw`;
-
+// ...which is then exported in one piece with the accompanying image for reduced repetition
 export function Deco() {
     return (
         <WinDeco>
@@ -31,3 +31,6 @@ export function Deco() {
         </WinDeco>
     );
 }
+
+// and this just provides the universal text padding for the interior content of each window
+export const Content = styled.div`padding: 0 0.7vw`;

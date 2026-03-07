@@ -2,6 +2,8 @@ import {Window, Deco, Content} from "../styling/WindowStyles.tsx";
 import {Main, VBox, HBox} from "../styling/MainStyles.tsx";
 
 export default function Education() {
+    // not all that different from Home, but now we introduce generic VBox and HBox styled divs
+    // which just represent horizontal and vertical flex-box respectively
     return (
         <Main>
             <Window>

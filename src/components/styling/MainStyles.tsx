@@ -1,6 +1,9 @@
 import styled from "styled-components";
 import {Link} from "react-router";
 
+// this file contains the general text formatting used across pages
+
+// defines the main window size and also font sizes and padding
 export const Main = styled.main`
     width: 70%;
     font-size: calc(2px + max(1.8vh, 1vw));
@@ -10,6 +13,7 @@ export const Main = styled.main`
         margin-top: 15px;
     }
     & p { padding: 0 1.5vw; }
+    // the window is just about the width of the screen when under 750px
     @media screen and (max-width: 750px) {
         width: 100%;
         height: 73vh;
@@ -18,11 +22,13 @@ export const Main = styled.main`
     padding: 0.5vh 0.5vw;
 `;
 
+// just the styling for the black links
 export const MainLink = styled(Link)`
     color: black;
     font-style: italic;
 `;
 
+// generic vertical flexbox
 export const VBox = styled.div`
     display: flex;
     flex-direction: column;
@@ -34,6 +40,7 @@ export const VBox = styled.div`
     }
 `;
 
+// generic *horizontal* flexbox
 export const HBox = styled.div`
     display: flex;
     height:fit-content;
@@ -48,6 +55,7 @@ export const HBox = styled.div`
     @media screen and (max-width: 750px) { & img { height: 7vh }  };
 `;
 
+// the little tags you see under the project and game names
 export const Tag = styled.div`
     font-size: calc(2px + max(1vh, 0.3vw));
     background-color: #d2d2d2;
@@ -58,3 +66,6 @@ export const Tag = styled.div`
     float: left;
     &:hover { background-color: #999999 };
 `;
+
+// and finally the horizontally spaced text used in Skills and Involvement
+export const HText = styled.p` margin-right: 3vw `;

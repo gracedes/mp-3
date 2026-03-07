@@ -12,6 +12,7 @@ import Employment from "./components/mains/Employment.tsx";
 import Involvement from "./components/mains/Involvement.tsx";
 import Skills from "./components/mains/Skills.tsx";
 
+//styling for the wrapper that contains the windows
 const Wrapper = styled.div`
     font-family: Helvetica, Arial, Veranda, sans-serif;
     font-optical-sizing: auto;
@@ -22,6 +23,7 @@ const Wrapper = styled.div`
     @media screen and (max-width: 750px) { width: 95vw };
 `;
 
+// and styling for the flexbox that holds the main and nav panels
 const Fbox = styled.div`
     display: flex;
     height: 78vh;
@@ -38,6 +40,7 @@ function Root() {
             <Header/>
             <Fbox>
                 <Nav/>
+                {/* the routes provide which main content function to call :) */}
                 <Routes>
                     <Route
                         path={"/"}

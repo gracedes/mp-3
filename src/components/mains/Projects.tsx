@@ -1,6 +1,8 @@
 import {Window, Deco, Content} from "../styling/WindowStyles.tsx";
+// Tag and MainLink are just simple visual styling divs
 import {Main, MainLink, VBox, HBox, Tag} from "../styling/MainStyles.tsx";
 
+// import the calculator itself from its own file for simplicity
 import Calculator from "../Calculator.tsx";
 
 export default function Projects() {

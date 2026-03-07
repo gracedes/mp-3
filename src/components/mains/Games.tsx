@@ -2,6 +2,7 @@ import {Window, Deco, Content} from "../styling/WindowStyles.tsx";
 import {Main, MainLink, VBox, HBox, Tag} from "../styling/MainStyles.tsx";
 
 export default function Games() {
+    // very similar layout to projects
     return (
       <Main>
           <Window>
